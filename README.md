@@ -1,7 +1,7 @@
 # <div align="center">Constructing a User Data Pipeline<div>
 
 ### <div align="center">Project Overview<div>
-Skills Demonstrated:
-Libraries and Programs:
+Skills Demonstrated:<br>
+Libraries and Programs:<br>
 
-For some time, I've been interested in constructing a data pipeline. This project is a fun take on that task, pulling user data from the popular phone game, Clash of Clans, and storing it in a "database" (a csv file).
+For some time, I've been interested in constructing a data pipeline. This project is a fun take on that task, pulling user data from the popular phone game, Clash of Clans, and storing it in a "database" (a csv file).<br>
