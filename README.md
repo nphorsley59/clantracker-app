@@ -1,4 +1,4 @@
-# <div align="center">Constructing a Clan Data Pipeline<div>
+# <div align="center">Constructing a User Data Pipeline<div>
 
 ### <div align="center">Project Overview<div>
 Skills Demonstrated:
