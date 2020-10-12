@@ -8,7 +8,7 @@ For some time, I've been interested in constructing a data pipeline. This projec
 
 **Step 1:** Generate a token to access to the Clash of Clans API.<br>
 
-![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/create_key.png "Create a Key") ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/ex_token.png "API Token")<br>
+![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/create_key.png "Create a Key") ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/api_token.png "API Token")<br>
 
 **Step 2.** Generate request URLs for a clan and for specific members.<br>
 
