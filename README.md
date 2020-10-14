@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/Clash_Banner.png" />
-</p><br>
+</p>
 
 ### <div align="center">Project Overview<div>
 Skills Demonstrated: *Data Pipelines, Data Wrangling,*<br>
