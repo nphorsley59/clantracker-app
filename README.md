@@ -10,7 +10,7 @@ Libraries and Programs: *Python, merge, request*<br>
 
 For some time, I've been interested in constructing a data pipeline. This project is a fun take on that task, pulling user data from the popular phone game, Clash of Clans, and storing it in a "database" (a csv file). I've broken down my approach into several steps to make it easy to understand and, if you'd like, replicate.<br>
 
-In the future, I'd like to use Task Scheduler to automatically run this script on a daily or bi-daily basis. This would quickly turn my "database" into an actual database that I could explore and model.<br>
+NOTE: In the future, I'd like to use Task Scheduler to automatically run this script on a daily or bi-daily basis. This would quickly turn my "database" into an actual database that I could explore and model.<br>
 
 **Step 1:** Generate a token to gain access to the Clash of Clans API.<br>
 
