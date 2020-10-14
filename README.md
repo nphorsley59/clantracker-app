@@ -13,7 +13,7 @@ In the future, I'd like to use Task Scheduler to automatically run this script o
 Go to https://developer.clashofclans.com/#/, create an account, and (from your account page) create a key.<br>
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/create_key.png "Create a Key") ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/api_token.png "API Token")<br>
 
-**Step 2.** Generate request URLs for a clan and for specific members.<br>
+**Step 2.** Generate request URLs for a clan and for specific members to check the URL formatting.<br>
 
 **Step 3.** Build a function (get_clan_data) to collect 'tag' information from all members in a clan.<br>
 
