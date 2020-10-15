@@ -15,17 +15,21 @@ NOTE: In the future, I'd like to use Task Scheduler to automatically run this sc
 **Step 1:** Generate a token to gain access to the Clash of Clans API.<br>
 
 Go to https://developer.clashofclans.com/#/, create an account, and (from your account page) create a key.<br>
+
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/create_key.png "Create a Key") ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/api_token.png "API Token")<br>
 
 **Step 2.** Generate request URLs for a clan and for specific members to check the URL formatting.<br>
 
 Navigate to 'documentation', 'clans' or 'players', and click GET.<br>
+
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/documentation.png "Documentation Page")<br>
 
 Click the 'i' button by 'Response Class' and input your API token.<br>
+
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/authorization.png "Authorize")<br>
 
-Enter a clantag or playertag under 'Parameters' and click 'Try it out!' at the bottom. This will pull the requested data and generate a request URL.<br>
+Enter a clantag or playertag under 'Parameters' and click 'Try it out!' at the bottom. This generate a request and a request URL.<br>
+
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/clan_URL.png "Request URL")<br>
 
 Compare the request URL to the clantag or playertag. We will use this formatting in steps 3&4.<br>
