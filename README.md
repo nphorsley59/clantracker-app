@@ -4,7 +4,7 @@
   <img src="https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/Clash_Banner.png" />
 </p>
 
-### <div align="center">Project Overview<div>
+## <div align="center">Project Overview<div>
 Skills Demonstrated: *Data Pipelines, Data Wrangling, Interacting with APIs*<br>
 Libraries and Programs: *Python, merge, request*<br>
 
@@ -12,13 +12,13 @@ For some time, I've been interested in constructing a data pipeline to gather my
 
 NOTE: In the future, I'd like to use Task Scheduler to automatically run this script on a daily or bi-daily basis. This would quickly turn my "database" into an actual database that I could explore and model.<br>
 
-#### **Step 1:** Generate a token to gain access to the Clash of Clans API.<br>
+### **Step 1:** Generate a token to gain access to the Clash of Clans API.<br>
 
 Go to https://developer.clashofclans.com/#/, create an account, and (from your account page) create a key.<br>
 
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/create_key.png "Create a Key") ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/api_token.png "API Token")<br>
 
-**Step 2.** Generate request URLs for a clan and for specific members to check the URL formatting.<br>
+### **Step 2.** Generate request URLs for a clan and for specific members to check the URL formatting.<br>
 
 Navigate to 'documentation', 'clans' or 'players', and click GET.<br>
 
@@ -34,10 +34,10 @@ Enter a clantag or playertag under 'Parameters' and click 'Try it out!' at the b
 
 Compare the request URL to the clantag or playertag. We will use this formatting in steps 3&4.<br>
 
-**Step 3.** Build a function (get_clan_data) to collect 'tag' information from all members in a clan.<br>
+### **Step 3.** Build a function (get_clan_data) to collect 'tag' information from all members in a clan.<br>
 
-**Step 4.** Build a function (get_profile_data) to collect user data based on 'tag'.<br>
+### **Step 4.** Build a function (get_profile_data) to collect user data based on 'tag'.<br>
 
-**Step 5.** Loop through get_profile_data using the tags collected from get_clan_data.<br>
+### **Step 5.** Loop through get_profile_data using the tags collected from get_clan_data.<br>
 
-**Step 6.** Clean and export user data.<br>
+### **Step 6.** Clean and export user data.<br>
