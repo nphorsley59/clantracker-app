@@ -12,7 +12,7 @@ For some time, I've been interested in constructing a data pipeline to gather my
 
 NOTE: In the future, I'd like to use Task Scheduler to automatically run this script on a daily or bi-daily basis. This would quickly turn my "database" into an actual database that I could explore and model.<br>
 
-**Step 1:** Generate a token to gain access to the Clash of Clans API.<br>
+#### **Step 1:** Generate a token to gain access to the Clash of Clans API.<br>
 
 Go to https://developer.clashofclans.com/#/, create an account, and (from your account page) create a key.<br>
 
