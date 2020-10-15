@@ -19,6 +19,15 @@ Go to https://developer.clashofclans.com/#/, create an account, and (from your a
 
 **Step 2.** Generate request URLs for a clan and for specific members to check the URL formatting.<br>
 
+Navigate to 'documentation', 'clans' or 'players', and click GET.<br>
+![alt_text](link "Documentation Page")<br>
+
+Click the 'i' button by 'Response Class' and input your API token.<br>
+![alt_text](link "Authorize")<br>
+
+Enter a clantag or playertag under 'Parameters' and click 'Try it out!' at the bottom. This will pull the requested data and generate a request URL.<br>
+![alt_text](link "Request URL")<br>
+
 **Step 3.** Build a function (get_clan_data) to collect 'tag' information from all members in a clan.<br>
 
 **Step 4.** Build a function (get_profile_data) to collect user data based on 'tag'.<br>
