@@ -32,7 +32,7 @@ Enter a clantag or playertag under 'Parameters' and click 'Try it out!' at the b
 
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/clan_URL.png "Request URL")<br>
 
-Compare the request URL to the clantag or playertag. We will use this formatting in steps 3&4.<br>
+Compare the request URL to the clantag or playertag you used. We will replicate this formatting in the next two steps.<br>
 
 ### **Step 3.** Build a function (get_clan_data) to collect 'tag' information from all members in a clan.<br>
 
