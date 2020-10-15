@@ -36,6 +36,12 @@ Compare the request URL to the clantag or playertag you used. We will replicate 
 
 ### **Step 3.** Build a function (get_clan_data) to collect 'tag' information from all members in a clan.<br>
 
+Create a function to request clan data using a clantag. Authorization is required, so be sure to include it as your header.<br>
+
+![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/request_header.png "Header")<br>
+
+![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/get_clan_data.png "get_clan_data Function")<br>
+
 ### **Step 4.** Build a function (get_profile_data) to collect user data based on 'tag'.<br>
 
 ### **Step 5.** Loop through get_profile_data using the tags collected from get_clan_data.<br>
