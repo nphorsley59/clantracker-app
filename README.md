@@ -20,13 +20,15 @@ Go to https://developer.clashofclans.com/#/, create an account, and (from your a
 **Step 2.** Generate request URLs for a clan and for specific members to check the URL formatting.<br>
 
 Navigate to 'documentation', 'clans' or 'players', and click GET.<br>
-![alt_text](link "Documentation Page")<br>
+![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/documentation.png "Documentation Page")<br>
 
 Click the 'i' button by 'Response Class' and input your API token.<br>
-![alt_text](link "Authorize")<br>
+![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/authorization.png "Authorize")<br>
 
 Enter a clantag or playertag under 'Parameters' and click 'Try it out!' at the bottom. This will pull the requested data and generate a request URL.<br>
-![alt_text](link "Request URL")<br>
+![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/clan_URL.png "Request URL")<br>
+
+Compare the request URL to the clantag or playertag. We will use this formatting in steps 3&4.<br>
 
 **Step 3.** Build a function (get_clan_data) to collect 'tag' information from all members in a clan.<br>
 
