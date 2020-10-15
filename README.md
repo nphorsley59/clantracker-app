@@ -16,7 +16,7 @@ NOTE: In the future, I'd like to use Task Scheduler to automatically run this sc
 
 Go to https://developer.clashofclans.com/#/, create an account, and (from your account page) create a key.<br>
 
-![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/create_key_small.png "Create a Key") ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/api_token.png "API Token")<br>
+![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/create_key_med.png "Create a Key") ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/api_token_med.png "API Token")<br>
 
 ### **Step 2.** Generate request URLs for a clan and for specific members to check the URL formatting.<br>
 
