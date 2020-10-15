@@ -58,3 +58,6 @@ Now that we can request clan data and player data, we need to pull playertags fr
 Clean and export whatever data you're interested in! I focused on 'tag', 'name', trophies', 'donations' and 'donationsReceived', but there are many more columns to explore. In the future, I'd like to add a timestamp and store this data in a database. Check back soon!<br>
 
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/clean_and_export.png "Export Data")<br>
+
+## <div align="center">Resources<div>
+https://developer.clashofclans.com/#/<br>
