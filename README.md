@@ -34,7 +34,7 @@ Enter a clantag or playertag under 'Parameters' and click 'Try it out!' at the b
 
 Compare the request URL to the clantag or playertag you used. We will replicate this formatting in the next two steps.<br>
 
-### **Step 3.** Build a function (get_clan_data) to collect 'playertag' information from all members in a clan.<br>
+### **Step 3.** Build a function (get_clan_data) to collect clan data based on 'clantag'.<br>
 
 Create a function to request clan data using a clantag. Authorization is required, so be sure to include it as your header.<br>
 
@@ -47,10 +47,14 @@ Repeat the previous step but replace the clantag request URL with a playertag re
 
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/get_player_data.png "get_player_data Function")<br>
 
-### **Step 5.** Loop through get_player_data using the playertags collected from get_clan_data.<br>
+### **Step 5.** Loop through get_player_data using playertags collected from get_clan_data.<br>
 
 Now that we can request clan data and player data, we need to pull playertags from our clan data and loop them through get_player_data.<br>
 
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/playertag_loop.png "Playertag Loop")<br>
 
 ### **Step 6.** Clean and export user data.<br>
+
+Clean and export whatever data you're interested in! I focused on 'tag', 'name', trophies', 'donations' and 'donationsReceived', but there are many more columns to explore. In the future, I'd like to add a timestamp and store this data in a database. Check back soon!<br>
+
+![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/clean_and_export.png "Export Data")<br>
