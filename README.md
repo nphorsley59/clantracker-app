@@ -10,7 +10,7 @@ Libraries and Programs: *Python, merge, request*<br>
 
 For some time, I've been interested in constructing a data pipeline in Python to gather my own data. This project is a fun take on that task, pulling user data from the popular phone game, Clash of Clans, and storing it in a "database" (a csv file). I've broken down my approach into several steps to make it easy to understand and, if you'd like, replicate.<br>
 
-NOTE: In the future, I'd like to use Task Scheduler to automatically run this script on a daily or bi-daily basis. This would quickly turn my "database" into an actual database that I could explore and model.<br>
+# <div align="center">Part 1 - Use the Clash of Clans API to Request Data<div>
 
 ### **Step 1:** Generate a token to gain access to the Clash of Clans API.<br>
 
@@ -58,3 +58,7 @@ Now that we can request clan data and player data, we need to pull playertags fr
 Clean and export whatever data you're interested in! I focused on 'tag', 'name', trophies', 'donations' and 'donationsReceived', but there are many more columns to explore. In the future, I'd like to add a timestamp and store this data in a database. Check back soon!<br>
 
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/clean_and_export.png "Export Data")<br>
+
+# <div align="center">Part 2 - Schedule Collection and Store the Data<div>
+  
+# <div align="center">Part 3 - Exploratory Data Analysis<div>
