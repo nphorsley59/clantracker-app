@@ -51,5 +51,13 @@ Clean and export whatever data you're interested in! I focused on 'tag', 'name',
 
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/clean_and_export.png "Export Data")<br>
 
-## Part 2: Creating and Filling an SQL Database
-### 
+## Part 2: Creating and Filling a mySQL Database
+### Download and install mySQL Server and mySQL Workbench.
+
+### Create a new database.
+
+### Write a query to load and insert your data into a table.
+
+### Use Task Scheduler to run your request script at regular intervals.
+
+### Ensure data is in an accessible folder.
