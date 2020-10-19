@@ -1,4 +1,4 @@
-# <div align="center">Pipeline and Analyze User Data<div>
+# <div align="center">User Data Pipeline<div>
 <p align="center">
   <img src="https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/Clash_Banner.png" />
 </p>
