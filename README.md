@@ -47,7 +47,7 @@ Now that we can request clan data and player data, we need to pull playertags fr
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/playertag_loop.png "Playertag Loop")<br>
 
 ### Clean and export user data.<br>
-Clean and export whatever data you're interested in! I focused on 'tag', 'name', trophies', 'donations' and 'donationsReceived', but there are many more columns to explore.<br>
+Clean and export whatever data you're interested in! I focused on 'tag', 'name', trophies', 'donations' and 'donationsReceived', but there are many more columns to explore. I've included a [sample data file]() if you'd like to see how I formatted my CSV.<br>
 
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/clean_and_export.png "Export Data")<br>
 
