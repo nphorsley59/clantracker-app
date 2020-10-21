@@ -9,6 +9,8 @@ Libraries and Programs: *Python, SQL, merge, request*<br>
 
 For some time, I've been interested in constructing a data pipeline in Python to gather and analyze my own data. This project is a fun take on that task, pulling user data from the popular phone game, Clash of Clans, and storing it in a local MySQL database. I've broken down my approach into several steps to make it easy to understand and, if you'd like, replicate.<br>
 
+<br>
+
 ## Part 1: Requesting Data from the Clash of Clans API
 ### Generate a token to gain access to the Clash of Clans API.
 Go to https://developer.clashofclans.com/#/, create an account, and (from your account page) create a key.<br>
@@ -54,6 +56,8 @@ Clean and export whatever data you're interested in! I focused on 'tag', 'name',
 ## Part 2: Creating and Filling a mySQL Database
 ### Download and install the mySQL Server and mySQL Workbench.
 Go to https://dev.mysql.com/downloads/mysql/ and download the MySQL Installer. I recommend installing only the mySQL Server and mySQL Workbench for the purposes of this project.<br>
+
+<br>
 
 ![alt_text]("MySQL Installer")<br>
 
