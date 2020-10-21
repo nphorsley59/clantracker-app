@@ -53,11 +53,11 @@ Clean and export whatever data you're interested in! I focused on 'tag', 'name',
 
 ![alt_text](https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/clean_and_export.png "Export Data")<br>
 
+<br>
+
 ## Part 2: Creating and Filling a mySQL Database
 ### Download and install the mySQL Server and mySQL Workbench.
 Go to https://dev.mysql.com/downloads/mysql/ and download the MySQL Installer. I recommend installing only the mySQL Server and mySQL Workbench for the purposes of this project.<br>
-
-<br>
 
 ![alt_text]("MySQL Installer")<br>
 
