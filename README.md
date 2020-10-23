@@ -59,7 +59,7 @@ Clean and export whatever data you're interested in! I focused on 'tag', 'name',
 ### 2.1. Download and install the mySQL Server and mySQL Workbench.
 Go to https://dev.mysql.com/downloads/mysql/ and download the MySQL Installer. I recommend installing only the mySQL Server and mySQL Workbench for the purposes of this project.<br>
 
-![alt_text]("MySQL Installer")<br>
+![alt_text](link "MySQL Installer")<br>
 
 ### 2.2. Create a new database, create a table, and load your data.
 
