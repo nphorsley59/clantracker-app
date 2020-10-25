@@ -63,6 +63,8 @@ Go to https://dev.mysql.com/downloads/mysql/ and download the MySQL Installer. I
 
 ### 2.2. Create a new database, create a table, and load your data.
 
+![alt_text](link "MySQL Installer")<br>
+
 ### 2.3. Use Task Scheduler to run your request script at regular intervals.
 
 ### 2.4. Ensure data is in an accessible folder.
