@@ -1,4 +1,4 @@
-# <div align="center">Constructing a User Data Pipeline<div>
+# <div align="center">Clan Manager<div>
 <p align="center">
   <img src="https://github.com/nphorsley59/clantracker-app/blob/main/docs/images/Clash_Banner.png" />
 </p>
