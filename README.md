@@ -1,6 +1,6 @@
 # <div align="center">Constructing a User Data Pipeline<div>
 <p align="center">
-  <img src="https://github.com/nphorsley59/Clash_Pipeline/blob/main/Figures/Clash_Banner.png" />
+  <img src="https://github.com/nphorsley59/clantracker-app/blob/main/docs/images/Clash_Banner.png" />
 </p>
 
 ## <div align="center">Project Overview<div>
