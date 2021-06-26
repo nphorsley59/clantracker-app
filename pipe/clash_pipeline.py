@@ -23,19 +23,19 @@ authorization = {
 
 # %%
 # functions
-def get_clan_data(clantag=None):
+def get_clans_clans(clantag):
     response = requests.get('https://api.clashofclans.com/v1/clans/%23{}/members'.format(clantag), headers=authorization).text
     js = json.loads(response)['items']
     df = pd.DataFrame(js)
     return df
 
-def get_player_data(playertag=None):
+def get_player_data(playertag):
     response = requests.get('https://api.clashofclans.com/v1/players/%23{}'.format(playertag), headers=authorization).text
     js = json.loads(response)
     df = pd.DataFrame.from_dict(js, orient='index')
     return df
 
-def pull_from_api(clantag=None):
+def pull_from_api(clantag):
     clan_data = get_clan_data(clantag=clantag)
     player_data = pd.DataFrame()
     tags = clan_data['tag'].apply(lambda x: x.replace('#', '', 1)).tolist()
