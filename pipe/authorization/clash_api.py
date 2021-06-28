@@ -4,9 +4,9 @@ import os
 import sys
 
 # locate root dir
-beacon = '\\beacon.py'
+flare = '\\flare.py'
 path = os.getcwd()
-while not os.path.isfile(os.path.join(path, beacon)):
+while not os.path.isfile(path + flare):
     path = os.path.dirname(path)
 sys.path.append(path)
 
