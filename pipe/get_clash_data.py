@@ -8,7 +8,7 @@ import json
 import pandas as pd
 import requests
 from config import Config
-from pipe.utils import export_with_timestamp
+from pipe.utils import export
 
 
 today_date = dt.datetime.today().strftime("%m-%d-%Y %H:%M:%S")
@@ -40,8 +40,8 @@ def get_clash_data(clantag):
     tags = clan_data['tag'].apply(lambda x: x.replace('#', '', 1)).tolist()
     for tag in tags:
         player_data = pd.concat([player_data, get_player_data(playertag=tag).T])
-    export_with_timestamp(clan_data, "data/clan_data/clan_data.csv")
-    export_with_timestamp(player_data, "data/player_data/player_data.csv")
+    export(clan_data, "data/clan_data/clan_data.csv", timestamped_copy=True)
+    export(player_data, "data/player_data/player_data.csv", timestamped_copy=True)
     return clan_data, player_data
 
 
