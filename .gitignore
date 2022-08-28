@@ -2,3 +2,6 @@ config.ini
 __pycache__/
 venv/
 .vscode/
+*.env
+data/clan_data/*
+data/player_data/*

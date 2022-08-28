@@ -11,8 +11,8 @@ sys.path.append(path)
 
 # import local packages/objects
 from pipe.authorization.clash_api import *
-from pipe.requests.clans import Clan
-from pipe.requests.universal import *
+from pipe.api_requests.clans import Clan
+from pipe.api_requests.universal import *
 
 
 Bloodline = Clan('#YQLJ9CRU')
