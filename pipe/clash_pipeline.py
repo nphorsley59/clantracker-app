@@ -23,7 +23,7 @@ authorization = {
 
 # %%
 # functions
-def get_clans_clans(clantag):
+def get_clan_data(clantag):
     response = requests.get('https://api.clashofclans.com/v1/clans/%23{}/members'.format(clantag), headers=authorization).text
     js = json.loads(response)['items']
     df = pd.DataFrame(js)
