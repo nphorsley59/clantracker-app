@@ -48,4 +48,5 @@ def get_clash_data(clantag):
 if __name__ == '__main__':
     test_clantag = 'YQLJ9CRU'
     test_clan_data, test_player_data = get_clash_data(clantag=test_clantag)
-    print(test_clan_data)
+    print(test_clan_data.sample(5))
+    print(test_player_data.sample(5))

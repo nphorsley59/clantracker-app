@@ -19,7 +19,7 @@ depends_on = None
 def upgrade() -> None:
     op.create_table(
         'players',
-        sa.Column('tag', sa.String(20), nullable=False),
+        sa.Column('tag', sa.String(20), primary_key=True, nullable=False),
         sa.Column('name', sa.String(100), nullable=False),
         sa.Column('role', sa.String(10), nullable=False)
     )
