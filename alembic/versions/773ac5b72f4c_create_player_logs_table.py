@@ -26,7 +26,10 @@ def upgrade() -> None:
         sa.Column('trophies', sa.Integer, nullable=False),
         sa.Column('attack_wins', sa.Integer, nullable=False),
         sa.Column('donations_sent', sa.Integer, nullable=False),
-        sa.Column('donations_received', sa.Integer, nullable=False)
+        sa.Column('donations_received', sa.Integer, nullable=False),
+        sa.Column('log_date', sa.DateTime,
+                  server_default=sa.func.current_timestamp(),
+                  nullable=False)
     )
 
 

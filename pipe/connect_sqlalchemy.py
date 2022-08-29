@@ -4,7 +4,7 @@ from sqlalchemy_utils import database_exists, create_database
 from config import Config
 
 
-def get_engine(url):
+def get_engine(url: str = Config.DB_URL):
     if not database_exists(url):
         create_database(url)
     psql_engine = create_engine(url, pool_size=50, echo=False)
@@ -12,8 +12,7 @@ def get_engine(url):
 
 
 def get_session():
-    url = Config.DB_URL
-    engine = get_engine(url)
+    engine = get_engine()
     session = sessionmaker(bind=engine)()
     return session
 
