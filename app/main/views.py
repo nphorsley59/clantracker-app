@@ -6,3 +6,7 @@ from django.http import HttpResponse
 
 def index(response):
     return HttpResponse("Clash of Clans")
+
+
+def profile(response):
+    return HttpResponse("Your Profile")
