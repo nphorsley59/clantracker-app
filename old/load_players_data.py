@@ -1,4 +1,3 @@
-
 import ast
 import os
 
@@ -20,7 +19,7 @@ def prep_players_data():
     return players
 
 
-def upsert_players_table():
+def upsert_players():
     players = prep_players_data().set_index('tag')
     engine = get_engine()
     result = pangres.upsert(con=engine, df=players, table_name='players',
@@ -31,28 +30,43 @@ def upsert_players_table():
         print(f'players -- {chunk.rowcount} row(s) updated')
 
 
-def prep_player_logs_data():
-    player_logs_columns = ['tag', 'expLevel', 'townHallLevel', 'league', 'trophies',
-                           'attackWins', 'donations', 'donationsReceived']
-    player_logs = import_players()[player_logs_columns]
-    player_logs_column_rename_dict = {'expLevel': 'exp_level',
-                                      'townHallLevel': 'town_hall_level',
-                                      'attackWins': 'attack_wins',
-                                      'donations': 'donations_sent',
-                                      'donationsReceived': 'donations_received'}
-    player_logs = player_logs.rename(columns=player_logs_column_rename_dict)
-    player_logs['league'] = player_logs['league'].fillna("{'name': None}")
-    player_logs['league'] = player_logs['league'].apply(lambda x: ast.literal_eval(x))
-    player_logs['league'] = player_logs['league'].apply(lambda x: x['name'])
-    return player_logs
+def prep_player_status_logs_data():
+    columns = ['tag', 'expLevel', 'townHallLevel']
+    player_status_logs = import_players()[columns]
+    rename_dict = {'tag': 'player_tag',
+                   'expLevel': 'exp_level',
+                   'townHallLevel': 'town_hall_level'}
+    player_status_logs = player_status_logs.rename(columns=rename_dict)
+    return player_status_logs
 
 
-def insert_player_logs_table():
-    player_logs = prep_player_logs_data()
-    player_logs.to_sql('player_logs', get_engine(), if_exists='append', index=False)
-    print(f'player_logs -- {len(player_logs)} row(s) inserted')
+def insert_player_status_logs():
+    player_status_logs = prep_player_status_logs_data()
+    player_status_logs.to_sql('player_status_logs', get_engine(), if_exists='append', index=False)
+    print(f'player_status_logs -- {len(player_status_logs)} row(s) inserted')
+
+
+def prep_player_activity_logs_data():
+    columns = ['tag', 'league', 'trophies', 'attackWins', 'donations', 'donationsReceived']
+    player_activity_logs = import_players()[columns]
+    rename_dict = {'tag': 'player_tag',
+                   'attackWins': 'attack_wins',
+                   'donations': 'donations_sent',
+                   'donationsReceived': 'donations_received'}
+    player_activity_logs = player_activity_logs.rename(columns=rename_dict)
+    player_activity_logs['league'] = player_activity_logs['league'].fillna("{'name': None}")
+    player_activity_logs['league'] = player_activity_logs['league'].apply(lambda x: ast.literal_eval(x))
+    player_activity_logs['league'] = player_activity_logs['league'].apply(lambda x: x['name'])
+    return player_activity_logs
+
+
+def insert_player_activity_logs():
+    player_activity_logs = prep_player_activity_logs_data()
+    player_activity_logs.to_sql('player_activity_logs', get_engine(), if_exists='append', index=False)
+    print(f'player_activity_logs -- {len(player_activity_logs)} row(s) inserted')
 
 
 if __name__ == '__main__':
-    upsert_players_table()
-    insert_player_logs_table()
+    upsert_players()
+    insert_player_status_logs()
+    insert_player_activity_logs()
