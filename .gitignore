@@ -15,5 +15,5 @@ venv/
 .ipynb_checkpoints
 
 # Project files
-data/clan_data/*
-data/player_data/*
+data/clan_data/*.csv
+data/player_data/*.csv
