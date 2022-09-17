@@ -1,7 +1,19 @@
-config.ini
-__pycache__/
-venv/
-.vscode/
+# Byte-compiled / optimized / DLL files
+**/__pycache__/*
+
+# Environment files
 *.env
+*.venv
+env/
+venv/
+
+# IDE files
+.idea/
+.vscode/
+
+# Jupyter files
+.ipynb_checkpoints
+
+# Project files
 data/clan_data/*
 data/player_data/*
