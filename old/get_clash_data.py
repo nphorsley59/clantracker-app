@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 
 from config import Config
-from old import utilities 
+from old import utils 
 
 
 AUTHORIZATION = {
@@ -42,9 +42,10 @@ def request_player_data(player_tag: str) -> pd.DataFrame:
         player_tag (str): Player tag.
     """
     url = 'https://api.clashofclans.com/v1/players/%23{}'.format(player_tag)
-    response = requests.get(url, headers=authorization).text
+    response = requests.get(url, headers=AUTHORIZATION).text
     js = json.loads(response)
-    df = pd.DataFrame.from_dict(js, orient='index')
+    print(pd.json_normalize(js))
+    df = pd.json_normalize(js)
     return df
 
 
@@ -58,8 +59,9 @@ def request_clan_player_data(clan_tag: pd.DataFrame) -> pd.DataFrame:
     player_data = []
     player_tags = extract_player_tags(clan_data)
     for tag in player_tags:
-        players.append(request_player_data(tag))
-    return player_data
+        player_data.append(request_player_data(tag))
+        print(request_player_data(tag))
+    return pd.concat(player_data)
 
 
 def main(clan_tag: str) -> pd.DataFrame:
@@ -69,7 +71,7 @@ def main(clan_tag: str) -> pd.DataFrame:
         clan_tag (str): Clan tag.
     """
     player_data = request_clan_player_data(clan_tag)
-    utilities.export(player_data, 
+    utils.export(player_data, 
                      "data/player_data/player_data.csv",
                      timestamped_copy=True)
     return player_data
