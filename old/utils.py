@@ -5,9 +5,9 @@ import os
 from config import Config
 
 
-def export(df, path, timestamped_copy=False):
+def export(df, path, versioned=False):
     df.to_csv(os.path.join(Config.PROJECT_DIR, path))
-    if timestamped_copy:
+    if versioned:
         timestamp = str(datetime.now().strftime("%Y%m%d_%H%M%S"))
         versioned_path = f"{os.path.splitext(path)[0]}" \
                          f"--{timestamp}{os.path.splitext(path)[-1]}"
