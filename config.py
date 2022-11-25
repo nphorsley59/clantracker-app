@@ -19,7 +19,3 @@ class Config:
     DB_PORT = os.environ.get("DB_PORT", "")
     DB_NAME = os.environ.get("DB_NAME", "")
     DB_URL = f"mysql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
-
-
-if __name__ == '__main__':
-    print(Config.CLASH_API_KEY)
