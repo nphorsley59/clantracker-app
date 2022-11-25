@@ -1,7 +1,22 @@
-config.ini
+# Byte-compiled / optimized / DLL files
 __pycache__/
-venv/
-.vscode/
+
+# OS files
+.DS_Store
+
+# Environment files
 *.env
-data/clan_data/*
-data/player_data/*
+*.venv
+env/
+venv/
+
+# IDE files
+.idea/
+.vscode/
+
+# Jupyter files
+.ipynb_checkpoints
+
+# Data files
+data/clan_data/*.csv
+data/player_data/*.csv
