@@ -1,0 +1,3 @@
+[submodule "adapters/read_write"]
+	path = adapters/read_write
+	url = https://github.com/nphorsley59/read-write-utilities.git
