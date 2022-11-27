@@ -1,5 +1,7 @@
 import pandas as pd
 
+from adapters.read_write import CsvWriter
+from config import Config
 from old.api import ClanRequest, PlayerRequest
 from old.entities import Clan, Player
 
@@ -26,5 +28,7 @@ if __name__ == '__main__':
         member_data.append(get_player_info(member))
     member_df = pd.concat(member_data).reset_index()
     member_df = member_df[['name', 'attackWins', 'donations', 'donationsReceived']]
+    write_path = os.path.join(Config.PROJ_DIR, 'data/player_data/player_data.csv')
+    CsvWriter(fpath=write_path).write_to_csv(versioned=True)
     print(member_df.sort_values(by='attackWins', ascending=False).tail(15))
     
