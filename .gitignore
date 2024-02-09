@@ -17,6 +17,4 @@ venv/
 # Jupyter files
 .ipynb_checkpoints
 
-# Data files
-data/clan_data/*.csv
-data/player_data/*.csv
+# Project files
