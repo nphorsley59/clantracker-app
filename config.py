@@ -1,21 +1,3 @@
-from dotenv import load_dotenv
-import os
-import pandas as pd
-
-
-pd.options.display.max_columns = None
-pd.options.display.max_rows = 300
-pd.set_option('display.width', 500)
-
-
-class Config:
-    PROJECT_DIR = os.path.dirname(__file__)
-    if os.path.isfile(os.path.join(PROJECT_DIR, 'local.env')):
-        load_dotenv(os.path.join(PROJECT_DIR, 'local.env'))
-    CLASH_API_KEY = os.environ.get("CLASH_API_KEY", "")
-    DB_USER = os.environ.get("DB_USER", "")
-    DB_PASS = os.environ.get("DB_PASS", "")
-    DB_HOST = os.environ.get("DB_HOST", "")
-    DB_PORT = os.environ.get("DB_PORT", "")
-    DB_NAME = os.environ.get("DB_NAME", "")
-    DB_URL = f"mysql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+# Midtown Apt ->
+# Alli's Apt -> "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6Ijc5MjJkNzg3LWZhNzMtNGRiYy05YWYyLTE4YzNhZjdhODE1NiIsImlhdCI6MTcwNjQ5Mzk1OSwic3ViIjoiZGV2ZWxvcGVyL2RlMTE5MTZkLWI4ZDktNjcwYi04MmZlLTdjOGRjYzQ4MjE3NiIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjEzNi41NS42MS43MSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.lFZBGSVnCSW5WZhlev1TxOP7ClXRvNUUIJBR2ItFQQ9YiBbfGV43aoSgz8r7rO4chukHYHjD8Q6OCgJauy1b5Q"
+COC_API_KEY = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6Ijc5MjJkNzg3LWZhNzMtNGRiYy05YWYyLTE4YzNhZjdhODE1NiIsImlhdCI6MTcwNjQ5Mzk1OSwic3ViIjoiZGV2ZWxvcGVyL2RlMTE5MTZkLWI4ZDktNjcwYi04MmZlLTdjOGRjYzQ4MjE3NiIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjEzNi41NS42MS43MSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.lFZBGSVnCSW5WZhlev1TxOP7ClXRvNUUIJBR2ItFQQ9YiBbfGV43aoSgz8r7rO4chukHYHjD8Q6OCgJauy1b5Q"
